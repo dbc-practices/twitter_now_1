@@ -1,0 +1,6 @@
+<% if @user.is_stale? %>
+  <div id="loading">waiting... </div>
+  <div id="recent"></div>
+<% else %>
+  <%= erb :_fresh_cache %>
+<% end %>
